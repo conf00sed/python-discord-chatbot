@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Fuse Bot</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Fuse Bot</a></h1>
+						<nav>
+              {% if logged %}
+             a href="#n>{{user.name}}#{{ur.discriminator}}</a>
+              {% else %}
+							<a href="#menu">Menu</a>
+              {% endif %}
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="/">Home</a></li>
+                {% if logged %}
+								<li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="#">About(WIP)</a></li>
+                <li><a href="/logout">Log out</a></li>
+                {% else %}
+                <li><a href="#">About(WIP)</a></li>
+                <li><a href="/login">Log in</a></li>
+                {% endif %}
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Welcome to Fuse Bot</h2>
+							<p>A multipurpose discord bot by @Fuse#0420</a></p>
+						</div>
+					</section>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> -->
+									<div class="content">
+										<h2 class="major">Moderation</h2>
+										<p>All the necessarry tools for moderating any servers from small to large. This module includes all standard and required commands for moderating such as kick, mute, ban, purge and much more with customisable settings!</p>
+									</div>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<!-- <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a> -->
+									<div class="content">
+										<h2 class="major">Economy</h2>
+										<p>The ecocnomy module allows users to have a perserver economy system with different ways to spend and use the money they earn. This also directly works with the giveaways module</p>
+									</div>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three" class="wrapper spotlight style3">
+								<div class="inner">
+									<!-- <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a> -->
+									<div class="content">
+										<h2 class="major">Leveling System</h2>
+										<p>A comprehensive leveling system thats different every server the bot is in! This level module will allow you to give or take experience from users, setup automatic level roles and compare ranks on the server leaderboard</p>
+									</div>
+								</div>
+							</section>
+
+            <!-- Three and a half? -->
+              <section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<!-- <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a> -->
+									<div class="content">
+										<h2 class="major">Fun & Giveaways</h2>
+										<p>These modules will allow for more fun and activity in the server through the use of fun commands and giveaways. This includes a very easy giveaway creator and deeply integrated games that provide per-server economy</p>
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major">How to invite to my server ?</h2>
+									{% if logged %} <!-- if logged == True -->
+                    <ul class="actions">
+                      <li><a href="/logout" class="button">Logout</a></li>
+                    </ul>
+                  {% else %}
+                    <ul class="actions">
+                      <li><a href="/login" class="button">Log into Discord</a></li>
+                    </ul>
+                  {% endif %}
+									<section class="features">
+									</section>
+								</div>
+							</section>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/jquery.scrollex.min.js"></script>
+			<script src="static/js/browser.min.js"></script>
+			<script src="static/js/breakpoints.min.js"></script>
+			<script src="static/js/util.js"></script>
+			<script src="static/js/main.js"></script>
+
+	</body>
+</html>
